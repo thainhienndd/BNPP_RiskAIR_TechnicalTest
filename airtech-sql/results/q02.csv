@@ -43,3 +43,14 @@ employee_id,first_name,last_name,email,phone_number,manager_id,department,countr
 54,Eric,LLL,eric.lll@mycompany.us,86227391,9,HR,US
 55,Thierry,MMM,thierry.mmm@mycompany.gb,93130273,9,Sales,GB
 56,Nathalie,NNN,nathalie.nnn@mycompany.es,41576574,9,IT,ES
+58,Michel,BBB,michel.bbb@mycompany.es,81945947,1,HR,ES
+59,Juliane,CCC,juliane.ccc@mycompany.br,87622749,1,Sales,BR
+60,Patrice,DDD,patrice.ddd@mycompany.hk,13931578,1,HR,HK
+61,Louis,EEE,louis.eee@mycompany.fr,68154273,1,Sales,FR
+63,Ludivine,GGG,ludivine.ggg@mycompany.fr,63280299,6,IT,FR
+64,Sophie,HHH,sophie.hhh@mycompany.br,66811818,6,IT,BR
+65,Camille,III,camille.iii@mycompany.gb,24205021,6,Sales,GB
+67,Thomas,KKK,thomas.kkk@mycompany.ar,20430282,9,Sales,AR
+68,Eric,LLL,eric.lll@mycompany.us,86227391,9,HR,US
+69,Thierry,MMM,thierry.mmm@mycompany.gb,93130273,9,Sales,GB
+70,Nathalie,NNN,nathalie.nnn@mycompany.es,41576574,9,IT,ES

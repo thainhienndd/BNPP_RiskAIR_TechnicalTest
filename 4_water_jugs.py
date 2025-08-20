@@ -38,6 +38,7 @@ def water_jugs_min_seq(target, capacities):
         seq.reverse()
         return seq
 
+    # While: either we reach the target, either q is empty (explored all possibility)
     while q:
         state = q.popleft()
         if any(x == target for x in state):
@@ -53,7 +54,7 @@ def water_jugs_min_seq(target, capacities):
                         return reconstruct(newt)
                     q.append(newt)
 
-        # 2) Vider (i -> -1)
+        # 2) Empty a jug
         for i in range(n):
             if state[i] > 0:
                 new = list(state); new[i] = 0; newt = tuple(new)
@@ -63,7 +64,7 @@ def water_jugs_min_seq(target, capacities):
                         return reconstruct(newt)
                     q.append(newt)
 
-        # 3) Verser (i -> j) jusqu’à ce que i soit vide ou j plein
+        # 3) Empty (i -> j) until i is empty or j is full
         for i in range(n):
             if state[i] == 0:
                 continue
@@ -84,10 +85,15 @@ def water_jugs_min_seq(target, capacities):
                     q.append(newt)
     return None
 
-def print_steps(seq):
+# function to print as in the example
+def print_steps(seq, target, capacities):
+    print(f"The value for {target}L and {capacities}L jugs is: ")
     for (src, dst), state in seq:
         state_fmt = "(" + ",".join(str(x) for x in state) + ")"
         print(f"{src:2d} -> {dst:2d} : {state_fmt}")
 
+seq_ex = water_jugs_min_seq(4, [3,5])
+print_steps(seq_ex, 4, [3,5])
+
 seq = water_jugs_min_seq(23, [8,145, 5])
-print_steps(seq)
+print_steps(seq, 23, [8,145, 5])

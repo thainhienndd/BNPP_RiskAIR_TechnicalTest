@@ -1,0 +1,4 @@
+employee_id,first_name,last_name,email,phone_number,manager_id,department,country_id
+1,Jean,AAA,jean.aaa@mycompany.fr,32359949,,Sales,FR
+6,Albert,FFF,albert.fff@mycompany.hk,63142944,,IT,HK
+9,Camille,III,camille.iii@mycompany.gb,24205021,6,Sales,GB

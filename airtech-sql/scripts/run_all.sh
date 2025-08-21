@@ -19,7 +19,7 @@ shopt -s nullglob
 sql_files=("$Q_DIR"/*.sql)
 
 if (( ${#sql_files[@]} == 0 )); then
-  echo "⚠️  Aucun fichier .sql trouvé dans: $Q_DIR"
+  echo "Aucun fichier .sql trouvé dans: $Q_DIR"
   exit 1
 fi
 
@@ -27,4 +27,4 @@ for q in "${sql_files[@]}"; do
   run "$q"
 done
 
-echo "✅ Done. Résultats CSV dans $OUT_DIR/"
+echo "Done. Résultats CSV dans $OUT_DIR/"
